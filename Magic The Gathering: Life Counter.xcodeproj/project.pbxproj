@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF5F5E811D320A290017B1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F5E801D320A290017B1BF /* AppDelegate.swift */; };
+		BF5F5E831D320A290017B1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F5E821D320A290017B1BF /* ViewController.swift */; };
+		BF5F5E861D320A290017B1BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5F5E841D320A290017B1BF /* Main.storyboard */; };
+		BF5F5E881D320A290017B1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5F5E871D320A290017B1BF /* Assets.xcassets */; };
+		BF5F5E8B1D320A290017B1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5F5E891D320A290017B1BF /* LaunchScreen.storyboard */; };
+		BF5F5E961D320A290017B1BF /* Magic_The_Gathering__Life_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F5E951D320A290017B1BF /* Magic_The_Gathering__Life_CounterTests.swift */; };
+		BF5F5EA11D320A290017B1BF /* Magic_The_Gathering__Life_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F5EA01D320A290017B1BF /* Magic_The_Gathering__Life_CounterUITests.swift */; };
+		BF5F5EB31D321B120017B1BF /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5F5EB21D321B120017B1BF /* BG.jpg */; };
+		BF8BC28C1D33273B003A92CB /* health20.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8BC2891D33273B003A92CB /* health20.png */; };
+		BF8BC28D1D33273B003A92CB /* health30.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8BC28A1D33273B003A92CB /* health30.png */; };
+		BF8BC28E1D33273B003A92CB /* health40.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8BC28B1D33273B003A92CB /* health40.png */; };
+		BF8BC2901D332975003A92CB /* RestartIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8BC28F1D332975003A92CB /* RestartIcon.png */; };
+		BF8BC2921D332B3E003A92CB /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8BC2911D332B3E003A92CB /* settingsIcon.png */; };
+		BFA7A3B11D36A33000433077 /* diceFive.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3AB1D36A33000433077 /* diceFive.png */; };
+		BFA7A3B21D36A33000433077 /* diceFour.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3AC1D36A33000433077 /* diceFour.png */; };
+		BFA7A3B31D36A33000433077 /* diceOne.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3AD1D36A33000433077 /* diceOne.png */; };
+		BFA7A3B41D36A33000433077 /* diceSix.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3AE1D36A33000433077 /* diceSix.png */; };
+		BFA7A3B51D36A33000433077 /* diceThree.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3AF1D36A33000433077 /* diceThree.png */; };
+		BFA7A3B61D36A33000433077 /* diceTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA7A3B01D36A33000433077 /* diceTwo.png */; };
+		BFB4D7121D321FE0002C8DE3 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D7111D321FE0002C8DE3 /* plusIcon.png */; };
+		BFB4D7161D322558002C8DE3 /* minusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D7151D322558002C8DE3 /* minusIcon.png */; };
+		BFB4D7181D322914002C8DE3 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D7171D322914002C8DE3 /* Black.png */; };
+		BFB4D71A1D322B64002C8DE3 /* MidBox.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D7191D322B64002C8DE3 /* MidBox.png */; };
+		BFB4D71C1D322BC4002C8DE3 /* MidBox2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D71B1D322BC4002C8DE3 /* MidBox2.png */; };
+		BFB4D71E1D322C31002C8DE3 /* blackDice.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4D71D1D322C31002C8DE3 /* blackDice.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF5F5E921D320A290017B1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5F5E751D320A280017B1BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5F5E7C1D320A280017B1BF;
+			remoteInfo = "Magic The Gathering: Life Counter";
+		};
+		BF5F5E9D1D320A290017B1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5F5E751D320A280017B1BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5F5E7C1D320A280017B1BF;
+			remoteInfo = "Magic The Gathering: Life Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF5F5E7D1D320A280017B1BF /* Magic The Gathering: Life Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic The Gathering: Life Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5F5E801D320A290017B1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF5F5E821D320A290017B1BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF5F5E851D320A290017B1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF5F5E871D320A290017B1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5F5E8A1D320A290017B1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF5F5E8C1D320A290017B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5F5E911D320A290017B1BF /* Magic The Gathering: Life CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic The Gathering: Life CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5F5E951D320A290017B1BF /* Magic_The_Gathering__Life_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_The_Gathering__Life_CounterTests.swift; sourceTree = "<group>"; };
+		BF5F5E971D320A290017B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5F5E9C1D320A290017B1BF /* Magic The Gathering: Life CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic The Gathering: Life CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5F5EA01D320A290017B1BF /* Magic_The_Gathering__Life_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_The_Gathering__Life_CounterUITests.swift; sourceTree = "<group>"; };
+		BF5F5EA21D320A290017B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5F5EB21D321B120017B1BF /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BG.jpg; path = ../../../../../../../Users/Panja/Documents/BG.jpg; sourceTree = "<group>"; };
+		BF8BC2891D33273B003A92CB /* health20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health20.png; sourceTree = SOURCE_ROOT; };
+		BF8BC28A1D33273B003A92CB /* health30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health30.png; sourceTree = SOURCE_ROOT; };
+		BF8BC28B1D33273B003A92CB /* health40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health40.png; sourceTree = SOURCE_ROOT; };
+		BF8BC28F1D332975003A92CB /* RestartIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartIcon.png; sourceTree = SOURCE_ROOT; };
+		BF8BC2911D332B3E003A92CB /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIcon.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3AB1D36A33000433077 /* diceFive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceFive.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3AC1D36A33000433077 /* diceFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceFour.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3AD1D36A33000433077 /* diceOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceOne.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3AE1D36A33000433077 /* diceSix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceSix.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3AF1D36A33000433077 /* diceThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceThree.png; sourceTree = SOURCE_ROOT; };
+		BFA7A3B01D36A33000433077 /* diceTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceTwo.png; sourceTree = SOURCE_ROOT; };
+		BFB4D7101D321CA3002C8DE3 /* airstrip.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = airstrip.ttf; path = "../../../../../../../Users/Panja/Downloads/airstrip-four/airstrip.ttf"; sourceTree = "<group>"; };
+		BFB4D7111D321FE0002C8DE3 /* plusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusIcon.png; path = ../../../../../../../Users/Panja/Documents/plusIcon.png; sourceTree = "<group>"; };
+		BFB4D7151D322558002C8DE3 /* minusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minusIcon.png; path = ../../../../../../../Users/Panja/Documents/minusIcon.png; sourceTree = "<group>"; };
+		BFB4D7171D322914002C8DE3 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Black.png; path = ../../../../../../../Users/Panja/Documents/Black.png; sourceTree = "<group>"; };
+		BFB4D7191D322B64002C8DE3 /* MidBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MidBox.png; path = ../../../../../../../Users/Panja/Documents/MidBox.png; sourceTree = "<group>"; };
+		BFB4D71B1D322BC4002C8DE3 /* MidBox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MidBox2.png; path = ../../../../../../../Users/Panja/Documents/MidBox2.png; sourceTree = "<group>"; };
+		BFB4D71D1D322C31002C8DE3 /* blackDice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackDice.png; path = ../../../../../../../Users/Panja/Documents/blackDice.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF5F5E7A1D320A280017B1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E8E1D320A290017B1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E991D320A290017B1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF5F5E741D320A280017B1BF = {
+			isa = PBXGroup;
+			children = (
+				BF5F5E7F1D320A290017B1BF /* Magic The Gathering: Life Counter */,
+				BF5F5E941D320A290017B1BF /* Magic The Gathering: Life CounterTests */,
+				BF5F5E9F1D320A290017B1BF /* Magic The Gathering: Life CounterUITests */,
+				BF5F5E7E1D320A280017B1BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF5F5E7E1D320A280017B1BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F5E7D1D320A280017B1BF /* Magic The Gathering: Life Counter.app */,
+				BF5F5E911D320A290017B1BF /* Magic The Gathering: Life CounterTests.xctest */,
+				BF5F5E9C1D320A290017B1BF /* Magic The Gathering: Life CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF5F5E7F1D320A290017B1BF /* Magic The Gathering: Life Counter */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F5E801D320A290017B1BF /* AppDelegate.swift */,
+				BF5F5E821D320A290017B1BF /* ViewController.swift */,
+				BF5F5E841D320A290017B1BF /* Main.storyboard */,
+				BF5F5E871D320A290017B1BF /* Assets.xcassets */,
+				BF5F5E891D320A290017B1BF /* LaunchScreen.storyboard */,
+				BF5F5E8C1D320A290017B1BF /* Info.plist */,
+				BF5F5EB21D321B120017B1BF /* BG.jpg */,
+				BFB4D7101D321CA3002C8DE3 /* airstrip.ttf */,
+				BFB4D7111D321FE0002C8DE3 /* plusIcon.png */,
+				BFB4D7151D322558002C8DE3 /* minusIcon.png */,
+				BFB4D7171D322914002C8DE3 /* Black.png */,
+				BFB4D7191D322B64002C8DE3 /* MidBox.png */,
+				BFB4D71B1D322BC4002C8DE3 /* MidBox2.png */,
+				BFB4D71D1D322C31002C8DE3 /* blackDice.png */,
+				BF8BC2891D33273B003A92CB /* health20.png */,
+				BF8BC28A1D33273B003A92CB /* health30.png */,
+				BF8BC28B1D33273B003A92CB /* health40.png */,
+				BF8BC28F1D332975003A92CB /* RestartIcon.png */,
+				BF8BC2911D332B3E003A92CB /* settingsIcon.png */,
+				BFA7A3AB1D36A33000433077 /* diceFive.png */,
+				BFA7A3AC1D36A33000433077 /* diceFour.png */,
+				BFA7A3AD1D36A33000433077 /* diceOne.png */,
+				BFA7A3AE1D36A33000433077 /* diceSix.png */,
+				BFA7A3AF1D36A33000433077 /* diceThree.png */,
+				BFA7A3B01D36A33000433077 /* diceTwo.png */,
+			);
+			path = "Magic The Gathering: Life Counter";
+			sourceTree = "<group>";
+		};
+		BF5F5E941D320A290017B1BF /* Magic The Gathering: Life CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F5E951D320A290017B1BF /* Magic_The_Gathering__Life_CounterTests.swift */,
+				BF5F5E971D320A290017B1BF /* Info.plist */,
+			);
+			path = "Magic The Gathering: Life CounterTests";
+			sourceTree = "<group>";
+		};
+		BF5F5E9F1D320A290017B1BF /* Magic The Gathering: Life CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F5EA01D320A290017B1BF /* Magic_The_Gathering__Life_CounterUITests.swift */,
+				BF5F5EA21D320A290017B1BF /* Info.plist */,
+			);
+			path = "Magic The Gathering: Life CounterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF5F5E7C1D320A280017B1BF /* Magic The Gathering: Life Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5F5EA51D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life Counter" */;
+			buildPhases = (
+				BF5F5E791D320A280017B1BF /* Sources */,
+				BF5F5E7A1D320A280017B1BF /* Frameworks */,
+				BF5F5E7B1D320A280017B1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic The Gathering: Life Counter";
+			productName = "Magic The Gathering: Life Counter";
+			productReference = BF5F5E7D1D320A280017B1BF /* Magic The Gathering: Life Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF5F5E901D320A290017B1BF /* Magic The Gathering: Life CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5F5EA81D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life CounterTests" */;
+			buildPhases = (
+				BF5F5E8D1D320A290017B1BF /* Sources */,
+				BF5F5E8E1D320A290017B1BF /* Frameworks */,
+				BF5F5E8F1D320A290017B1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5F5E931D320A290017B1BF /* PBXTargetDependency */,
+			);
+			name = "Magic The Gathering: Life CounterTests";
+			productName = "Magic The Gathering: Life CounterTests";
+			productReference = BF5F5E911D320A290017B1BF /* Magic The Gathering: Life CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF5F5E9B1D320A290017B1BF /* Magic The Gathering: Life CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5F5EAB1D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life CounterUITests" */;
+			buildPhases = (
+				BF5F5E981D320A290017B1BF /* Sources */,
+				BF5F5E991D320A290017B1BF /* Frameworks */,
+				BF5F5E9A1D320A290017B1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5F5E9E1D320A290017B1BF /* PBXTargetDependency */,
+			);
+			name = "Magic The Gathering: Life CounterUITests";
+			productName = "Magic The Gathering: Life CounterUITests";
+			productReference = BF5F5E9C1D320A290017B1BF /* Magic The Gathering: Life CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF5F5E751D320A280017B1BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Panja;
+				TargetAttributes = {
+					BF5F5E7C1D320A280017B1BF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PJ5SE8ET34;
+					};
+					BF5F5E901D320A290017B1BF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BF5F5E7C1D320A280017B1BF;
+					};
+					BF5F5E9B1D320A290017B1BF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BF5F5E7C1D320A280017B1BF;
+					};
+				};
+			};
+			buildConfigurationList = BF5F5E781D320A280017B1BF /* Build configuration list for PBXProject "Magic The Gathering: Life Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF5F5E741D320A280017B1BF;
+			productRefGroup = BF5F5E7E1D320A280017B1BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF5F5E7C1D320A280017B1BF /* Magic The Gathering: Life Counter */,
+				BF5F5E901D320A290017B1BF /* Magic The Gathering: Life CounterTests */,
+				BF5F5E9B1D320A290017B1BF /* Magic The Gathering: Life CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF5F5E7B1D320A280017B1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8BC28D1D33273B003A92CB /* health30.png in Resources */,
+				BF8BC28C1D33273B003A92CB /* health20.png in Resources */,
+				BFA7A3B41D36A33000433077 /* diceSix.png in Resources */,
+				BFB4D71A1D322B64002C8DE3 /* MidBox.png in Resources */,
+				BF8BC28E1D33273B003A92CB /* health40.png in Resources */,
+				BF5F5EB31D321B120017B1BF /* BG.jpg in Resources */,
+				BFB4D71E1D322C31002C8DE3 /* blackDice.png in Resources */,
+				BF8BC2921D332B3E003A92CB /* settingsIcon.png in Resources */,
+				BF5F5E8B1D320A290017B1BF /* LaunchScreen.storyboard in Resources */,
+				BFB4D71C1D322BC4002C8DE3 /* MidBox2.png in Resources */,
+				BFA7A3B21D36A33000433077 /* diceFour.png in Resources */,
+				BF8BC2901D332975003A92CB /* RestartIcon.png in Resources */,
+				BF5F5E881D320A290017B1BF /* Assets.xcassets in Resources */,
+				BFB4D7161D322558002C8DE3 /* minusIcon.png in Resources */,
+				BFB4D7181D322914002C8DE3 /* Black.png in Resources */,
+				BFA7A3B61D36A33000433077 /* diceTwo.png in Resources */,
+				BF5F5E861D320A290017B1BF /* Main.storyboard in Resources */,
+				BFA7A3B31D36A33000433077 /* diceOne.png in Resources */,
+				BFA7A3B51D36A33000433077 /* diceThree.png in Resources */,
+				BFA7A3B11D36A33000433077 /* diceFive.png in Resources */,
+				BFB4D7121D321FE0002C8DE3 /* plusIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E8F1D320A290017B1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E9A1D320A290017B1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF5F5E791D320A280017B1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5F5E831D320A290017B1BF /* ViewController.swift in Sources */,
+				BF5F5E811D320A290017B1BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E8D1D320A290017B1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5F5E961D320A290017B1BF /* Magic_The_Gathering__Life_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5F5E981D320A290017B1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5F5EA11D320A290017B1BF /* Magic_The_Gathering__Life_CounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF5F5E931D320A290017B1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5F5E7C1D320A280017B1BF /* Magic The Gathering: Life Counter */;
+			targetProxy = BF5F5E921D320A290017B1BF /* PBXContainerItemProxy */;
+		};
+		BF5F5E9E1D320A290017B1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5F5E7C1D320A280017B1BF /* Magic The Gathering: Life Counter */;
+			targetProxy = BF5F5E9D1D320A290017B1BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF5F5E841D320A290017B1BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5F5E851D320A290017B1BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF5F5E891D320A290017B1BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5F5E8A1D320A290017B1BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF5F5EA31D320A290017B1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF5F5EA41D320A290017B1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5F5EA61D320A290017B1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Magic The Gathering: Life Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BF5F5EA71D320A290017B1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Magic The Gathering: Life Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BF5F5EA91D320A290017B1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Magic The Gathering: Life CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magic The Gathering: Life Counter.app/Magic The Gathering: Life Counter";
+			};
+			name = Debug;
+		};
+		BF5F5EAA1D320A290017B1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Magic The Gathering: Life CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magic The Gathering: Life Counter.app/Magic The Gathering: Life Counter";
+			};
+			name = Release;
+		};
+		BF5F5EAC1D320A290017B1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Magic The Gathering: Life CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Magic The Gathering: Life Counter";
+			};
+			name = Debug;
+		};
+		BF5F5EAD1D320A290017B1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Magic The Gathering: Life CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Panja-Co.Magic-The-Gathering--Life-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Magic The Gathering: Life Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF5F5E781D320A280017B1BF /* Build configuration list for PBXProject "Magic The Gathering: Life Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5F5EA31D320A290017B1BF /* Debug */,
+				BF5F5EA41D320A290017B1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5F5EA51D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5F5EA61D320A290017B1BF /* Debug */,
+				BF5F5EA71D320A290017B1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5F5EA81D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5F5EA91D320A290017B1BF /* Debug */,
+				BF5F5EAA1D320A290017B1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5F5EAB1D320A290017B1BF /* Build configuration list for PBXNativeTarget "Magic The Gathering: Life CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5F5EAC1D320A290017B1BF /* Debug */,
+				BF5F5EAD1D320A290017B1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF5F5E751D320A280017B1BF /* Project object */;
+}

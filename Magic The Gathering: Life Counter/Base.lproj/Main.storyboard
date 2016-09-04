@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="airstrip.ttf">
+            <string>AirstripFour</string>
+            <string>AirstripFour</string>
+            <string>AirstripFour</string>
+            <string>AirstripFour</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_The_Gathering__Life_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SkQ-VI-w1j">
+                                <rect key="frame" x="-5" y="0.0" width="325" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hE-Xb-zcK">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                <fontDescription key="fontDescription" name="AirstripFour" family="Airstrip Four" pointSize="100"/>
+                                <color key="textColor" red="0.996257483959198" green="0.99363070726394653" blue="0.99299103021621704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Ss-ZXQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <fontDescription key="fontDescription" name="AirstripFour" family="Airstrip Four" pointSize="100"/>
+                                <color key="textColor" red="0.996257483959198" green="0.99363070726394653" blue="0.99299103021621704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMT-LU-Kpu">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="284"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.050980392156862744" green="0.37254901960784315" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPlusOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSx-SD-KQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuq-l9-37n">
+                                <rect key="frame" x="160" y="0.0" width="160" height="284"/>
+                                <connections>
+                                    <action selector="onMinusOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DJn-Z2-RFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3x-Ao-dtq">
+                                <rect key="frame" x="0.0" y="284" width="160" height="284"/>
+                                <connections>
+                                    <action selector="onMinusTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Syr-c4-LGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys7-oi-Pek">
+                                <rect key="frame" x="160" y="284" width="160" height="284"/>
+                                <connections>
+                                    <action selector="onPlusTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4p-fC-NFJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plusIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-b7-PDd">
+                                <rect key="frame" x="30" y="121" width="44" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plusIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-Yd-1DM">
+                                <rect key="frame" x="246" y="405" width="44" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="minusIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zX-2X-4bP">
+                                <rect key="frame" x="242" y="116" width="52" height="52"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="minusIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-hN-2fV">
+                                <rect key="frame" x="26" y="400" width="52" height="52"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MidBox2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mqi-V9-vzB">
+                                <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP3-DY-6AH">
+                                <rect key="frame" x="177" y="263" width="49" height="42"/>
+                                <state key="normal" title="Button" image="health20.png"/>
+                                <connections>
+                                    <action selector="onSelectLives:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1WC-3w-sXc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHC-u0-iPI">
+                                <rect key="frame" x="33" y="266" width="39" height="36"/>
+                                <state key="normal" title="Button" image="RestartIcon.png"/>
+                                <connections>
+                                    <action selector="onReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGv-To-QUG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c66-lD-XfK">
+                                <rect key="frame" x="109" y="266" width="38" height="35"/>
+                                <state key="normal" title="Button" image="blackDice.png"/>
+                                <connections>
+                                    <action selector="onDiceRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Be4-Rb-BbI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpE-ac-hGG">
+                                <rect key="frame" x="243" y="264" width="50" height="39"/>
+                                <state key="normal" title="Button" image="settingsIcon.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipj-10-xRn">
+                                <rect key="frame" x="56" y="264" width="49" height="42"/>
+                                <state key="normal" title="Button" image="health20.png"/>
+                                <connections>
+                                    <action selector="onSelectTwentyLives:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJZ-cC-hzb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niP-vZ-Dvh">
+                                <rect key="frame" x="136" y="263" width="49" height="42"/>
+                                <state key="normal" title="Button" image="health30.png"/>
+                                <connections>
+                                    <action selector="onSelectThirtyLives:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Im6-pj-6rV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POa-ps-Y8R">
+                                <rect key="frame" x="216" y="262" width="49" height="42"/>
+                                <state key="normal" title="Button" image="health40.png"/>
+                                <connections>
+                                    <action selector="onSelectFourtyLives:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfD-r4-ZzZ"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q5b-wm-ucG">
+                                <rect key="frame" x="98" y="20" width="118" height="31"/>
+                                <connections>
+                                    <action selector="onePoisonUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="71i-P2-1vL"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="knG-F9-iQ6">
+                                <rect key="frame" x="101" y="518" width="118" height="31"/>
+                                <connections>
+                                    <action selector="onePoisonUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="NYw-Wr-eo3"/>
+                                    <action selector="twoPoisonUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Inp-Lk-rrM"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOj-9g-B5M">
+                                <rect key="frame" x="132" y="481" width="56" height="54"/>
+                                <fontDescription key="fontDescription" name="AirstripFour" family="Airstrip Four" pointSize="25"/>
+                                <color key="textColor" red="0.18525701761245728" green="0.56908148527145386" blue="0.091667406260967255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-Te-cWc">
+                                <rect key="frame" x="132" y="36" width="56" height="54"/>
+                                <fontDescription key="fontDescription" name="AirstripFour" family="Airstrip Four" pointSize="25"/>
+                                <color key="textColor" red="0.18525701761245728" green="0.56908148527145386" blue="0.091667406260967255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4K-ug-ers">
+                                <rect key="frame" x="16" y="15" width="289" height="232"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sl9-EF-WfD">
+                                <rect key="frame" x="16" y="319" width="291" height="234"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fourtyHealthSelect" destination="POa-ps-Y8R" id="sAc-b0-Uj5"/>
+                        <outlet property="oneDiceRollImage" destination="q4K-ug-ers" id="rk0-cM-L6q"/>
+                        <outlet property="oneHealthLabel" destination="Q0d-Ss-ZXQ" id="gbS-PE-9Zo"/>
+                        <outlet property="oneMinusButton" destination="4zX-2X-4bP" id="QL6-f7-Kj9"/>
+                        <outlet property="onePlusButton" destination="ScX-b7-PDd" id="e71-WV-53c"/>
+                        <outlet property="onePoison" destination="Q5b-wm-ucG" id="uRo-Pz-GUA"/>
+                        <outlet property="onePoisonLabel" destination="FIN-Te-cWc" id="aLF-tw-6WL"/>
+                        <outlet property="openSettingsButton" destination="CpE-ac-hGG" id="22A-6X-bUD"/>
+                        <outlet property="restartButton" destination="AHC-u0-iPI" id="ch4-97-MPi"/>
+                        <outlet property="rollDiceButton" destination="c66-lD-XfK" id="hzY-iq-SVT"/>
+                        <outlet property="selectLivesButton" destination="OP3-DY-6AH" id="ERU-SQ-6zX"/>
+                        <outlet property="thirtyHealthSelect" destination="niP-vZ-Dvh" id="hiJ-E1-odP"/>
+                        <outlet property="twentyHealthSelect" destination="ipj-10-xRn" id="RfG-Zg-vYQ"/>
+                        <outlet property="twoDiceRollImage" destination="Sl9-EF-WfD" id="sWR-bn-UGw"/>
+                        <outlet property="twoHealthLabel" destination="8hE-Xb-zcK" id="DZe-4R-bN2"/>
+                        <outlet property="twoMinusButton" destination="IeX-hN-2fV" id="p0e-Zr-buk"/>
+                        <outlet property="twoPlusButton" destination="Mge-Yd-1DM" id="gUE-ao-x5j"/>
+                        <outlet property="twoPoison" destination="knG-F9-iQ6" id="aca-CI-erF"/>
+                        <outlet property="twoPoisonLabel" destination="KOj-9g-B5M" id="tbX-K7-7Ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG.jpg" width="236" height="419"/>
+        <image name="MidBox2.png" width="320" height="44"/>
+        <image name="RestartIcon.png" width="512" height="512"/>
+        <image name="blackDice.png" width="626" height="626"/>
+        <image name="health20.png" width="597" height="555"/>
+        <image name="health30.png" width="597" height="555"/>
+        <image name="health40.png" width="597" height="555"/>
+        <image name="minusIcon.png" width="128" height="128"/>
+        <image name="plusIcon.png" width="128" height="128"/>
+        <image name="settingsIcon.png" width="256" height="256"/>
+    </resources>
+</document>
